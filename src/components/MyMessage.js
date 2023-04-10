@@ -21,7 +21,8 @@ export default function MyMessage({ message }) {
         backgroundColor: '#3B2A50',
       }}
     >
-        {message.text}
+        {/* {message.text} */}
+        <div dangerouslySetInnerHTML={{__html: message.text}}/>
     </div>
   );
 }
