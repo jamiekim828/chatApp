@@ -19,7 +19,7 @@ export default function ChatFeed(props) {
             className='read-receipt'
             style={{
               float: isMyMessage ? 'right' : 'left',
-              backgroundImage: person.person.avatar && `url(${person.person.avatar})`,
+              backgroundImage: `url(${person?.person?.avatar})`,
             }}
           />
         )
