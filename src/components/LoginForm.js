@@ -48,7 +48,7 @@ export default function LoginForm() {
             placeholder='Password'
             required
           ></input>
-          <div allign='center'>
+          <div align='center'>
             <button type='submit' className='button'>
               <span>Start Chatting</span>
             </button>
