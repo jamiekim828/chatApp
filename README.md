@@ -1,11 +1,17 @@
 # Realtime Chat App
 
-This is a realtime chat app built using ChatEngine and [Create React App](https://github.com/facebook/create-react-app). The application allows users to sign in and chat with other users in realtime.
+This is a realtime chat app built using ChatEngine and [Create React App](https://github.com/facebook/create-react-app).\ The application allows users to sign in and chat with other users in realtime.
 
 ## Deployed Version
 
 A deployed version of the app can be found here:
 [Chat App](https://chat-app-ten-alpha.vercel.app/)
+
+## To Login
+If you want to play around
+
+- Username: Wendy
+- password: 123123
 
 ## Built With
 
