@@ -10,6 +10,22 @@ export default function ChatFeed(props) {
   const chat = chats && chats[activeChat];
   console.log(chat, userName, messages);
 
+  const renderReadReceipts = (message, isMyMessage) => {
+    chat.people.map(
+      (person, index) =>
+        person.last_read === message.id && (
+          <div
+            key={`read_${index}`}
+            className='read-receipt'
+            style={{
+              float: isMyMessage ? 'right' : 'left',
+              backgroundImage: person.person.avatar && `url(${person.person.avatar})`,
+            }}
+          />
+        )
+    );
+  };
+
   const renderMessages = () => {
     const keys = Object.keys(messages);
     return keys.map((key, index) => {
@@ -35,7 +51,9 @@ export default function ChatFeed(props) {
               marginRight: isMyMessage ? '18px' : '0px',
               marginLeft: isMyMessage ? '0px' : '68px',
             }}
-          ></div>
+          >
+            {renderReadReceipts(message, isMyMessage)}
+          </div>
         </div>
       );
     });

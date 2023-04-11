@@ -29,7 +29,8 @@ export default function TheirMessage({lastMessage, message}) {
                   marginLeft: isFirstMessageByUser ? '4px': '48px'
                 }}
               >
-                  {message.text}
+                  {/* {message.text} */}
+                  <div dangerouslySetInnerHTML={{__html: message.text}}/>
               </div>)
           
     }
