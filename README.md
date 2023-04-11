@@ -1,6 +1,6 @@
 # Realtime Chat App
 
-This is a realtime chat app built using ChatEngine and [Create React App](https://github.com/facebook/create-react-app).\ The application allows users to sign in and chat with other users in realtime.
+This is a realtime chat app built using ChatEngine and [Create React App](https://github.com/facebook/create-react-app). The application allows users to sign in and chat with other users in realtime.
 
 ## Deployed Version
 
